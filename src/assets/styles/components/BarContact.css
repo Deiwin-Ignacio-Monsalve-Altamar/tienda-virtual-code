@@ -1,0 +1,33 @@
+.bar-contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.phone img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.phone h2 {
+    font-size: 1.1rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.contact li{
+    font-size: 1.1rem;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 1rem;
+}

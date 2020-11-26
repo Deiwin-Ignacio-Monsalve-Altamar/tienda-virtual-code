@@ -1,0 +1,65 @@
+section {
+    height: 6rem;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+  }
+.search .search__logo img{
+    width: 8rem;
+    height: 8rem;
+}
+  
+.search__input {
+    width: 40%;
+}
+.search__input input{
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid;
+    border-radius: 25px;
+    color: gray;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0px 20px;
+  }
+  
+::placeholder {
+    color: red;
+}
+
+.car__shop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save_products {
+    align-items: center;
+    border: 1px solid black;
+    width: 13rem;
+    height: 3rem;
+}
+
+.car__shop .save_products ul{
+    padding: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.car__shop img{
+    width: 2rem;
+    height: 2rem;
+}
+.search li{
+    list-style: none;
+}
