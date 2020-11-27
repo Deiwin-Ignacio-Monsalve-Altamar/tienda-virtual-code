@@ -1,62 +1,91 @@
-.carousel-item {
-    border-radius: 20px;
-    overflow: hidden;
+.Product-Container {
     position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 250px;
-    margin-right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 450ms all;
-    -webkit-transform-origin: center left;
-            transform-origin: center left;
-  }
-  
-  .carousel-item:hover ~ .carousel-item {
-    -webkit-transform: translate3d(100px, 0, 0);
-            transform: translate3d(100px, 0, 0);
-  }
-  
-  .carousel-item__img {
-    width: 200px;
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .carousel-item__details {
-    align-items: flex-start;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-    bottom: 0;
+    width: 100%;
+    height: 0 auto;
+}
+
+.Product-Container .Img-Product {
+    float: left;
+    width: 360px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.Product-Container .Brand {
+    font-size: 40px;
+    color: #F8F7F7;
+    font-weight: bold;
+}
+.Description {
+    color: #F8F7F7;
+}
+.Price {
+    font-size: 30px;
+    color: #F8F7F7;
+}
+.Product-Container li {
+    list-style: none;
+}
+
+.Product-Container .List-Color {
     display: flex;
-    font-size: 10px;
-    flex-direction: column;
-    justify-content: flex-end;
-    left: 0;
-    opacity: 0;
-    transition: 450ms opacity;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .carousel-item__details--img {
-    width: 20px;
-  }
-  
-  .carousel-item:hover .carousel-item__details {
-    opacity: 1;
-  }
-  
-  .carousel-item__details--title {
-    color: white;
-    margin: 5px 0px 0px 0px;
-  }
-  
-  .carousel-item__details--subtitle {
-    color: white;
-    font-size: 8px;
-    margin: 3px 0px;
-  }
+    flex-wrap: wrap;
+}
+
+.Product-Container .List-Color li {
+    margin: 5px;
+}
+
+.Product-Container .List-Color li .View-Color-Button{
+    margin: 0 auto;
+    height: 50px;
+}
+
+.Product-Container .List-Sizes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Product-Container .List-Sizes li {
+    margin: 5px;
+}
+.Product-Container .Buttons-Amount-Container {
+    margin: auto;
+    height: 60px;
+}
+
+.Product-Container .Buttons-Amount-Container .Button-Amount {
+    float: left;
+    margin: 5px;
+    height: auto;
+    padding: auto;
+}
+
+.Product-Container .Buttons-Amount-Container .Amount-text {
+    float: left;
+    font-size: 30px;
+    color: #ffe600;
+    height: auto;
+    padding: auto;
+}
+
+
+.Product-Container .Add-Shopping-Container {
+    clear: both;
+    margin: auto;
+    padding: auto;
+}
+
+.Product-Container .Add-Shopping-Container .Add-Shoppin-Cart-Button {
+    text-align: left;
+    margin: auto;
+    padding: auto;
+}
+
+.List-Products-Container {
+    width: 100%;
+}
+
+.List-Products-Container .Product-Card{
+    float: left;
+    margin: 20px 20px 20px 0px;
+}

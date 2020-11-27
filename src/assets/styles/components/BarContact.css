@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #8080805c;
 }
 
 .phone{
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     margin-right: 2rem;
+    margin-top: 1rem;
 }
 
 .contact li{

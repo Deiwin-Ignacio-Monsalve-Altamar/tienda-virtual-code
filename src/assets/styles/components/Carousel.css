@@ -2,7 +2,7 @@
     overflow: scroll;
     margin-top: 1rem;
     width: 100%;
-    height: 39rem;
+    height: 45rem;
     display: flex;
   }
   
@@ -12,13 +12,13 @@
   margin:  0 1rem 1rem 1rem;
 }
 
-.carousel__main img {
+.carousel__main Product-Card{
 
   height: 100%;
 }
 
 
-.carousel__second img {
+.carousel__second Product-Card {
   margin-bottom: 1rem;
   width: 100%;
   height: 18rem;
