@@ -1,20 +1,18 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer';
-import Search from '../components/Search';
-import Categories from '../components/Categories';
+import React from 'react';
 import Carousel from '../components/Carousel';
-import MultiCarouselPage from '../components/MultiCarouselPage';
+import useInitialState from '../hooks/useInitialState';
+
+const API = 'http://127.0.0.1:3000/initialState/'
 
 
 const Home = () =>{
+
+    const initialState = useInitialState(API);
+    console.log(initialState)
+    
     return (
         <>
-        <Header />
-        <Search />
-        <Categories />
-        <Carousel />
-        <MultiCarouselPage />
-        <Footer />
+            <Carousel isHome={true}/>
         </>
     )
 }

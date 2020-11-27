@@ -1,19 +1,18 @@
 import React from 'react';
-import 'fontsource-roboto';
 
 import Header from '../components/Header';
-import Contact from '../components/Contact';
+import Login from '../components/Login';
 import Footer from '../components/Footer';
 
-const Contacts = () =>{
+const SingUp = () =>{
 
     return (
         <>
         <Header />
-        <Contact />
+        <Login />
         <Footer />
         </>
     )
 } 
 
-export default Contacts;
+export default SingUp;
