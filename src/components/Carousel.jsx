@@ -77,7 +77,7 @@ const Carousel = ({isHome, list}) => {
             </aside>
           </article>
         </section>
-        :  <div className="List-Products-Container"> {list.map((item, i) => <CarouselItem product={item}/>)}</div>
+        :  <div className="List-Products-Container"> {list.map(item => <CarouselItem key={item.id} {...item}/>)}</div>
 };
 
 export default Carousel;
