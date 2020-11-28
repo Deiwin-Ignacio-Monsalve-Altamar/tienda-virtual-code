@@ -1,20 +1,26 @@
 import React from 'react';
+import { connect } from "react-redux";
 import Carousel from '../components/Carousel';
-import useInitialState from '../hooks/useInitialState';
+import MultiCarouselPage from '../components/MultiCarouselPage';
+import Search from "../components/Search";
+import Categories from "../components//Categories";
 
-const API = 'http://127.0.0.1:3000/initialState/'
 
+const Home = ({myShop}) =>{
 
-const Home = () =>{
-
-    const initialState = useInitialState(API);
-    console.log(initialState)
-    
     return (
         <>
+            <Search shop={myShop} />
+            <Categories />
             <Carousel isHome={true}/>
+            <MultiCarouselPage />
         </>
     )
 }
 
-export default Home;
+const mapStateToProps = state => {
+    return {
+      myShop: state.myShop,
+    };
+  };
+export default connect(mapStateToProps, null)(Home);
