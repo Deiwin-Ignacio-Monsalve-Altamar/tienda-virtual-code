@@ -1,39 +1,51 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
 import { Card, Button } from "react-bootstrap";
+import { addToCar } from "../actions";
 
-import '../assets/styles/components/CarouselItem.css';
+import "../assets/styles/components/CarouselItem.css";
 
+const CarouselItem = props => {
+  const { img, description, price, id } = props;
 
-const CarouselItem = ({product}) =>{
+  const handleAddToCar = () => {
+    props.addToCar({
+      img, description, price, id
+     })
+  }
 
-    const { img, description, price, id } = product;
-    return (
-        <Card style={{ width: "18rem" }} className="Product-Card">
-        <Card.Img variant="top" src={img} />
-        <Card.Body className="Product-Card-Body">
-          <Card.Title>{description}</Card.Title>
-          <Card.Text className="Price-Text">{`$${price}`}</Card.Text>
+  return (
+    <Card style={{ width: "18rem" }} className="Product-Card">
+      <Card.Img variant="top" src={img} />
+      <Card.Body className="Product-Card-Body">
+        <Card.Title>{description}</Card.Title>
+        <Card.Text className="Price-Text">{`$${price}`}</Card.Text>
+        <div className="Buttons">
           <Button
             variant="primary"
             className="Buy-Button"
-            /* onClick={() => {
-              setProductSelected();
-              setSelect(true);
-            }} */
+            onClick={() => handleAddToCar}
           >
-            Select
+            Add to Car
           </Button>
-         {/*  {select ? (
-            <Link to="/Product">
-              <Button variant="primary" className="Buy-Button">
-                Buy now
-              </Button>
-            </Link>
-          ) : ( */}
-            <Button variant="primary" disabled>Buy now</Button>
-        </Card.Body>
-      </Card>
-    )
+          {/*  {select ? (
+              <Link to="/Product">
+                <Button variant="primary" className="Buy-Button">
+                  Buy now
+                </Button>
+              </Link>
+            ) : ( */}
+          <Button variant="primary" disabled>
+            Buy now
+          </Button>
+        </div>
+      </Card.Body>
+    </Card>
+  );
+};
+
+const mapDispatchToProps = {
+  addToCar,
 }
 
-export default CarouselItem;
+export default connect(null, mapDispatchToProps)(CarouselItem);
