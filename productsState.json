@@ -1,5 +1,6 @@
 {
   "data": {
+    "Myshop": [],
     "user": {},
     "women": [
         {
@@ -64,14 +65,6 @@
           "img": "https://dummyimage.com/800x600.png/99118E/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "price": 9000,
-          "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
-          "id": 9,
-          "title": "color tBlue",
-          "img": "https://dummyimage.com/800x600.png/99118E/ffffff",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "price": 2323,
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
         }
       ],
@@ -139,14 +132,6 @@
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "price": 9000,
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
-          "id": 9,
-          "title": "color tBlue",
-          "img": "https://dummyimage.com/800x600.png/99118E/ffffff",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "price": 2323,
-          "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
         }
       ],
     "children":[
@@ -213,14 +198,6 @@
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "price": 9000,
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
-          "id": 9,
-          "title": "color tBlue",
-          "img": "https://dummyimage.com/800x600.png/99118E/ffffff",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "price": 2323,
-          "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
         }
       ],
     "babys":[ 
@@ -286,14 +263,6 @@
           "img": "https://dummyimage.com/800x600.png/99118E/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "price": 9000,
-          "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
-          "id": 9,
-          "title": "color tBlue",
-          "img": "https://dummyimage.com/800x600.png/99118E/ffffff",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "price": 2323,
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
         }
       ]
