@@ -4,7 +4,12 @@ import logo from '../assets/static/dima.png';
 import pay from '../assets/static/compras.png'
 import '../assets/styles/components/Search.css';
 
-const Search = () => (
+const Search = myShop => {
+
+    let longitud = 0;    
+    
+    return (
+
   <section>
       <ul className="search">
         <li className="search__logo">
@@ -24,9 +29,9 @@ const Search = () => (
                     <li>
                         Products
                     </li>
-
+                    {myShop[0] === null ? longitud = 0 : longitud = myShop.length}
                     <li>
-                        0
+                        longitud
                     </li>
                 </ul>
                 
@@ -35,6 +40,8 @@ const Search = () => (
 
       </ul>
   </section>
-);
+)
+};
 
+  
 export default Search;
