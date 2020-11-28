@@ -9,9 +9,7 @@ const Contacts = () =>{
 
     return (
         <>
-        <Header />
         <Contact />
-        <Footer />
         </>
     )
 } 
