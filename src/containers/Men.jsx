@@ -1,25 +1,29 @@
-import React from 'react';
-
+import React from "react";
+import { connect } from "react-redux";
 import { Spinner } from "react-bootstrap";
-import Carousel from '../components/Carousel';
-import MultiCarouselPage from '../components/MultiCarouselPage';
-import useInitialState from '../hooks/useInitialState';
+import Carousel from "../components/Carousel";
+import Search from "../components/Search";
+import Categories from "../components//Categories";
 
-const API = 'http://localhost:3000/data/'
+const Men = ({ myShop, men }) => {
+  return (
+    <>
+      <Search shop={myShop} />
+      <Categories />
+      {men ? (
+        <Carousel list={men} />
+      ) : (
+        <Spinner animation="border" variant="secondary" />
+      )}
+    </>
+  );
+};
 
-const Men = () =>{
+const mapStateToProps = state => {
+  return {
+    myShop: state.myShop,
+    men: state.men,
+  };
+};
 
-    const initialState = useInitialState(API);
-    console.log(initialState.clothes)
-
-
-    return (
-        <>
-        {initialState.clothes ?  <Carousel list={initialState.clothes.men}/>
-            : <Spinner animation="border" variant="secondary" /> 
-        }
-        </>
-    ) 
-}
-
-export default Men;
+export default connect(mapStateToProps, null)(Men);
