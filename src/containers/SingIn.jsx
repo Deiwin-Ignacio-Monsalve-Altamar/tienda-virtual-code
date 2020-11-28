@@ -8,9 +8,7 @@ const SingUp = () =>{
 
     return (
         <>
-        <Header />
-        <Login />
-        <Footer />
+            <Login />
         </>
     )
 } 
